@@ -6,7 +6,7 @@ const url = require('url');
 const dataPath = path.join(__dirname, 'data');
 
 const server = http.createServer((req, res)=> {
-	if(req.url == '/jokes' && req.metod == 'GET'){
+	if(req.url == '/jokes' && req.method == 'GET'){
 		getAllJokes(req, res);
 	}
 });
